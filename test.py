@@ -9,5 +9,8 @@ class TestIsOdd(unittest.TestCase):
     def test_dont_understand(self):
       self.assertEqual(respond("Blah?"), "Sorry I didn't understand that.")
 
+    def test_none(self):
+      self.assertEqual(respond(None), "Sorry I didn't understand that.")
+
 if __name__ == '__main__':
     unittest.main()
